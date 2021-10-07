@@ -1,0 +1,24 @@
+{
+    "collection": "prootData",
+    "database": "Spot_Chair",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        },
+        {
+            "name": "user",
+            "apply_when": {},
+            "write": true,
+            "insert": true,
+            "delete": false,
+            "search": true,
+            "additional_fields": {}
+        }
+    ]
+}
