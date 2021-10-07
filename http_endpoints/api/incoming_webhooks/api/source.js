@@ -6,6 +6,6 @@ exports = function(payload, response) {
     query: payload.query
   }).then(result => {
     response.setStatusCode(201);
-    response.setBody(result.insertedId);
+    //response.setBody(result.insertedId);
   })
 };
