@@ -6,8 +6,7 @@
     "can_evaluate": {},
     "options": {
         "httpMethod": "POST",
-        "secret": "spot",
-        "validationMethod": "SECRET_AS_QUERY_PARAM"
+        "validationMethod": "NO_VALIDATION"
     },
     "respond_result": true,
     "disable_arg_logs": true,
