@@ -4,7 +4,7 @@ exports = function(payload, response) {
   obj = EJSON.parse(payload.body.text());
   requestLogs.insertOne({
     device: obj.device,
-    data: obj.data
+    data: obj.data.replace("\n","")
   }).then(result => {
     response.setStatusCode(201);
     //response.setBody(result.insertedId);
