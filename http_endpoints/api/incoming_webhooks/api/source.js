@@ -3,7 +3,7 @@ exports = function(payload, response) {
   const requestLogs = mongodb.db("Spot_Chair").collection("TimeSeries");
   obj = EJSON.parse(payload.body.text());
   requestLogs.insertOne({
-    tstamp: Date.now(),
+    tstamp:new Timestamp(),
     device: obj.device,
     data: obj.data.replace("\n",""),
     batt: obj.batt.replace("\n","")
