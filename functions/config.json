@@ -1,1 +1,6 @@
-[]
+[
+    {
+        "name": "api",
+        "private": false
+    }
+]
